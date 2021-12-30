@@ -10,11 +10,11 @@
 int lcdColumns = 16; //Inisisasi Coloumn
 int lcdRows = 2; //Inisiasi rows
 
-char auth[] = "BoYpcly0NijeEh3j-T3mKnAHmBJ--sM0"; //Dapat dari email
-char ssid[] = "Galaxy A50"; //Nama wifi
-char pass[] = "ra entuk";  //Password wifi
-unsigned long myChannelNumber = 1603040; //ID akun ThingSpeak
-const char * myWriteAPIKey = "03UEPG70AGCPWLZA"; //memasukan apikey
+char auth[] = "xxxxxxxx"; //Dapat dari email
+char ssid[] = "xxxxxx"; //Nama wifi
+char pass[] = "xxxxxxxx";  //Password wifi
+unsigned long myChannelNumber = xxxxxx; //ID akun ThingSpeak
+const char * myWriteAPIKey = "xxxxxxx"; //memasukan apikey
 WiFiClient client;
 
 #define TRIGGER_PIN 33 //Trig pin Ultrasonik
@@ -35,7 +35,7 @@ void setup(){  //Pengaturan Pin dan Variabel
   lcd.backlight(); //Menyalakan Backlight
   Serial.begin(115200);
   delay(10);
-  Blynk.begin(auth, ssid, pass, "blynk.azizfath.my.id", 8080); 
+  Blynk.begin(auth, ssid, pass, "xxxxxxxxx", 8080); 
   pinMode(infraredPin, INPUT); //pirPin as INPUT
   myservo.attach(13); //Pin Servo
   ThingSpeak.begin(client);  // Initialize ThingSpeak
